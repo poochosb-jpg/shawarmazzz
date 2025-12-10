@@ -1,0 +1,16 @@
+monoooo 
+perrooo
+
+Para poder subir los cambios a github
+
+
+Abre la aplicacion git bash
+
+# 1. Preparar todos los cambios
+git add .
+
+# 2. Crear el punto de guardado local con un mensaje claro
+git commit -m "mensaje del cambio hecho ej: sistema x implementado"
+
+# 3. Subir el commit a GitHub
+git push
