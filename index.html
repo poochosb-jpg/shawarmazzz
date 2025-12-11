@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kleyopatra | Comida Árabe e Internacional</title>
+    <meta name="description"
+        content="Kleyopatra - El arte de seducir tu paladar. Comida árabe e internacional. Abierto todos los días de 11 AM a 11 PM.">
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="file.jpg" alt="Kleyopatra Logo" class="logo-img">
+            <span class="logo-text">KLEYOPATRA</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#" onclick="openMenu(); return false;">Menú</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#platos">Platos Famosos</a></li>
+                <li><a href="https://wa.link/5ekgsd" target="_blank" class="btn-order">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">KLEYOPATRA</h1>
+                <p class="hero-subtitle">El arte de seducir tu paladar 🌯🍔</p>
+                <p class="hero-description">🇱🇧 Comida árabe e internacional 🇱🇧</p>
+                <p class="hero-hours">⏰ Abierto todos los días de 11 AM a 11 PM</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.link/5ekgsd" target="_blank" class="btn-primary">Hacer Pedido</a>
+                    <a href="#" onclick="openMenu(); return false;" class="btn-secondary">Ver Menú</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="chef-shawarma.png" alt="Chef preparando Shawarma">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAMOUS DISHES SECTION -->
+    <section id="platos" class="famous-dishes">
+        <h2 class="section-title">Platos Famosos</h2>
+        <div class="dishes-grid">
+            <div class="dish-card">
+                <div class="dish-image">
+                    <img src="12.jpg" alt="Shawarma Kleyopatra">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">Shawarma Kleyopatra</h3>
+                    <p class="dish-price">$12</p>
+                </div>
+            </div>
+            <div class="dish-card">
+                <div class="dish-image">
+                    <img src="pizza-new.png" alt="Pizza Especial">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">Pizza Especial Familiar</h3>
+                    <p class="dish-price">$30</p>
+                </div>
+            </div>
+            <div class="dish-card">
+                <div class="dish-image">
+                    <img src="14.jpg" alt="Rocky Burger">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">Rocky Burger</h3>
+                    <p class="dish-price">$12</p>
+                </div>
+            </div>
+            <div class="dish-card">
+                <div class="dish-image">
+                    <img src="20.jpg" alt="Paella">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">Paella (2 Personas)</h3>
+                    <p class="dish-price">$45</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION SECTION -->
+    <section id="ubicacion" class="location-section">
+        <h2 class="section-title">Nuestra Ubicación</h2>
+        <div class="location-content">
+            <div class="location-info">
+                <h3>📍 Encuéntranos</h3>
+                <p>Visítanos en nuestro restaurante</p>
+                <p class="location-address">Centro Comercial Forum Plaza<br>Locales 13 y 14, Lechería<br>Estado
+                    Anzoátegui, Venezuela</p>
+                <p class="location-hours"><strong>Horario:</strong><br>Lunes a Domingo<br>11:00 AM a 11:00 PM</p>
+                <p class="location-phone"><strong>Teléfono:</strong><br>+58 424-8738114</p>
+                <a href="https://wa.link/5ekgsd" target="_blank" class="btn-primary">Contactar por WhatsApp</a>
+            </div>
+            <div class="location-map">
+                <iframe src="https://maps.google.com/maps?q=10.1856881,-64.6887899&hl=es&z=18&output=embed" width="100%"
+                    height="400" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contacto" class="contact-section">
+        <h2 class="section-title">Contáctanos</h2>
+        <div class="contact-content">
+            <p class="contact-description">¿Listo para disfrutar de nuestros deliciosos platos? Contáctanos por WhatsApp
+                y haz tu pedido ahora.</p>
+            <a href="https://wa.link/5ekgsd" target="_blank" class="btn-primary btn-large">Chatear en WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Kleyopatra. Todos los derechos reservados. | Comida Árabe e Internacional</p>
+    </footer>
+
+    <!-- MENU MODAL -->
+    <div id="menuModal" class="menu-modal">
+        <div class="menu-modal-content">
+            <div class="menu-modal-header">
+                <h2>Nuestro Menú Completo</h2>
+                <span class="close-menu" onclick="closeMenu()">&times;</span>
+            </div>
+            <div class="menu-grid">
+
+                <!-- SHAWARMAS -->
+                <div class="menu-card">
+                    <div class="menu-image-placeholder">
+                        <img src="12.jpg" alt="Shawarmas">
+                    </div>
+                    <h3>Shawarmas</h3>
+                    <p class="menu-description">Vegetales: Lechuga, tomate, cebolla perejil, pepinillos y nabo
+                        encurtidos</p>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">Pollo</span>
+                            <span class="item-price">$8</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Carne</span>
+                            <span class="item-price">$8</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Mixto</span>
+                            <span class="item-price">$8</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Pernil</span>
+                            <span class="item-price">$8</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Trimixto</span>
+                            <span class="item-price">$10</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Especial (pollo, carne, vegetales, falafel o tabule o papa
+                                frita)</span>
+                            <span class="item-price">$10</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Jumbo (pollo, carne, vegetales, falafel y tabule)</span>
+                            <span class="item-price">$11</span>
+                        </div>
+                        <div class="menu-item featured">
+                            <span class="item-name">⭐ Kleyopatra (pollo, carne, vegetales, falafel, tabule y papa
+                                frita)</span>
+                            <span class="item-price">$12</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Sandwich Falafel</span>
+                            <span class="item-price">$7</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Shawarma Abierto (adicional)</span>
+                            <span class="item-price">$2</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Plato de Shawarma Especial 1 Persona</span>
+                            <span class="item-price">$18</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Plato de Shawarma Especial 2 Personas</span>
+                            <span class="item-price">$40</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PIZZAS -->
+                <div class="menu-card">
+                    <div class="menu-image-placeholder">
+                        <img src="pizza-new.png" alt="Pizzas">
+                    </div>
+                    <h3>Arma Tu Pizza</h3>
+                    <p class="menu-description">Topping opcional: Orégano, aceite de oliva, pesto<br>
+                        Topping adicional: BBQ, parmesano, salsa cesar, cebolla crispy, papas al hilo</p>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">Clásica Med (2 proteínas y 2 vegetales)</span>
+                            <span class="item-price">$15</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Clásica Familiar (2 proteínas y 2 vegetales)</span>
+                            <span class="item-price">$18</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Suprema Med (3 proteínas y 3 vegetales)</span>
+                            <span class="item-price">$18</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Suprema Familiar (3 proteínas y 3 vegetales)</span>
+                            <span class="item-price">$21</span>
+                        </div>
+                        <div class="menu-item featured">
+                            <span class="item-name">⭐ Especial Med (ingredientes ilimitados)</span>
+                            <span class="item-price">$22</span>
+                        </div>
+                        <div class="menu-item featured">
+                            <span class="item-name">⭐ Especial Familiar (ingredientes ilimitados)</span>
+                            <span class="item-price">$30</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HAMBURGUESAS -->
+                <div class="menu-card">
+                    <div class="menu-image-placeholder">
+                        <img src="14.jpg" alt="Hamburguesas">
+                    </div>
+                    <h3>Hamburguesas</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">Punta Burger</span>
+                            <span class="item-price">$8</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Bacon Burger</span>
+                            <span class="item-price">$9</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Dr Burger</span>
+                            <span class="item-price">$9</span>
+                        </div>
+                        <div class="menu-item featured">
+                            <span class="item-name">⭐ Rocky Burger</span>
+                            <span class="item-price">$12</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Libanesa</span>
+                            <span class="item-price">$9</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ENSALADAS -->
+                <div class="menu-card">
+                    <div class="menu-image-placeholder">
+                        <img src="15.jpg" alt="Ensaladas">
+                    </div>
+                    <h3>Ensaladas</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">Tabule</span>
+                            <span class="item-price">$8</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Fatuch</span>
+                            <span class="item-price">$10</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Yogurt con Pepino</span>
+                            <span class="item-price">$10</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Libanesa</span>
+                            <span class="item-price">$10</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Cesar</span>
+                            <span class="item-price">$10</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Cesar con Pollo</span>
+                            <span class="item-price">$13</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Cesar con Camarones</span>
+                            <span class="item-price">$15</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JUGOS NATURALES -->
+                <div class="menu-card">
+                    <div class="menu-image-placeholder">
+                        <img src="16.jpg" alt="Jugos Naturales">
+                    </div>
+                    <h3>Jugos Naturales</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">Fresa / Mora / Guanábana / Limonada / Lechosa / Piña / Melón /
+                                Melocotón / Parchita</span>
+                            <span class="item-price">$4</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PLATOS MIXTOS -->
+                <div class="menu-card">
+                    <div class="menu-image-placeholder">
+                        <img src="17.jpg" alt="Platos Mixtos">
+                    </div>
+                    <h3>Platos Mixtos</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">Plato Mixto</span>
+                            <span class="item-price">$20</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Bandeja Mixta x2 Personas</span>
+                            <span class="item-price">$45</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Bandeja Mixta x3 Personas</span>
+                            <span class="item-price">$58</span>
+                        </div>
+                        <div class="menu-item featured">
+                            <span class="item-name">⭐ Bandeja Mixta x4 Personas</span>
+                            <span class="item-price">$72</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PASTAS -->
+                <div class="menu-card">
+                    <div class="menu-image-placeholder">
+                        <img src="18.jpg" alt="Pastas">
+                    </div>
+                    <h3>Pastas</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">Boloña</span>
+                            <span class="item-price">$12</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Carbonara</span>
+                            <span class="item-price">$15</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Marinera</span>
+                            <span class="item-price">$20</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Alfredo</span>
+                            <span class="item-price">$12</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Fruto de Mare</span>
+                            <span class="item-price">$20</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Filete Betina</span>
+                            <span class="item-price">$18</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARNE Y AVES -->
+                <div class="menu-card">
+                    <div class="menu-image-placeholder">
+                        <img src="19.jpg" alt="Carne y Aves">
+                    </div>
+                    <h3>Carne y Aves</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">Pollo a la Plancha</span>
+                            <span class="item-price">$14</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Parrilla de Pollo</span>
+                            <span class="item-price">$16</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Parrilla de Lomito</span>
+                            <span class="item-price">$20</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Parrilla Mixta</span>
+                            <span class="item-price">$22</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Centro de Lomito</span>
+                            <span class="item-price">$20</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MARISCOS -->
+                <div class="menu-card">
+                    <div class="menu-image-placeholder">
+                        <img src="20.jpg" alt="Mariscos">
+                    </div>
+                    <h3>Mariscos</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">Camarón Rebozado</span>
+                            <span class="item-price">$18</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Camarón al Ajillo</span>
+                            <span class="item-price">$18</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Calamar Rebozado</span>
+                            <span class="item-price">$18</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Parrilla de Mariscos</span>
+                            <span class="item-price">$25</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Langostino Pane</span>
+                            <span class="item-price">$25</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Parrilla Mar y Tierra</span>
+                            <span class="item-price">$25</span>
+                        </div>
+                        <div class="menu-item featured">
+                            <span class="item-name">⭐ Paella (2 Personas)</span>
+                            <span class="item-price">$45</span>
+                        </div>
+                        <div class="menu-item featured">
+                            <span class="item-name">⭐ Arroz a la Marinera (2 Personas)</span>
+                            <span class="item-price">$45</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BROCHETAS Y PINCHOS -->
+                <div class="menu-card">
+                    <div class="menu-image-placeholder">
+                        <img src="21.jpg" alt="Brochetas y Pinchos">
+                    </div>
+                    <h3>Brochetas y Pinchos</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">Brocheta de Pollo</span>
+                            <span class="item-price">$16</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Brocheta de Lomito</span>
+                            <span class="item-price">$20</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Brocheta de Kafta</span>
+                            <span class="item-price">$16</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Brocheta Mixta</span>
+                            <span class="item-price">$20</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Brocheta de Kafta de Cordero</span>
+                            <span class="item-price">$20</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Brocheta de Langostino</span>
+                            <span class="item-price">$25</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Brocheta de Pernil</span>
+                            <span class="item-price">$18</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ENTRADAS -->
+                <div class="menu-card">
+                    <div class="menu-image-placeholder">
+                        <img src="22.jpg" alt="Entradas">
+                    </div>
+                    <h3>Entradas</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">Crema de Garbanzo</span>
+                            <span class="item-price">$8</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Crema de Berenjena</span>
+                            <span class="item-price">$8</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Crema de Pimentón</span>
+                            <span class="item-price">$8</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Crema Mixta (tres cremas)</span>
+                            <span class="item-price">$9</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Kibbe Crudo / Frito / Horneado / Asado</span>
+                            <span class="item-price">$12</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Ración de Makanek</span>
+                            <span class="item-price">$12</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Frito Mixto</span>
+                            <span class="item-price">$12</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Ración de Falafel</span>
+                            <span class="item-price">$7</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Tabaquitos de Uva / Repollo</span>
+                            <span class="item-price">$8</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Papa Frita</span>
+                            <span class="item-price">$4</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Tequeños</span>
+                            <span class="item-price">$7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KIDS -->
+                <div class="menu-card">
+                    <div class="menu-image-placeholder">
+                        <img src="23.jpg" alt="Kids">
+                    </div>
+                    <h3>Kids</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">Pollo a la Canasta</span>
+                            <span class="item-price">$12</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Mini Hamburguesa</span>
+                            <span class="item-price">$7</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Tequeños</span>
+                            <span class="item-price">$7</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Pasta Boloña</span>
+                            <span class="item-price">$12</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AIRAN -->
+                <div class="menu-card">
+                    <div class="menu-image-placeholder">
+                        <img src="24.jpg" alt="Airan">
+                    </div>
+                    <h3>Airan</h3>
+                    <p class="menu-description">Yogurt, ajo y sal</p>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">Original / Fresa / Mora / Guanábana / Limonada / Lechosa / Piña /
+                                Melón / Melocotón / Parchita</span>
+                            <span class="item-price">$6</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openMenu() {
+            document.getElementById('menuModal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            document.getElementById('menuModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function (event) {
+            const modal = document.getElementById('menuModal');
+            if (event.target == modal) {
+                closeMenu();
+            }
+        }
+    </script>
+
+</body>
+
+</html>
