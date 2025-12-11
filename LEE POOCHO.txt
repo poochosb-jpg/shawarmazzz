@@ -1,16 +1,33 @@
 monoooo 
 perrooo
 
+Trata de hacer todo dentro de la carpeta shawarmazzz
+pq si no te pones dentro de la carpeta no se suben a github
+
+
+
 Para poder subir los cambios a github
 
+1#
+ copia la ruta de acceso de shawarmazzz
+    "C:\Users\abrasha\Downloads\SHAWARMAS_KING\shawarmazzz"
 
+
+2# 
 Abre la aplicacion git bash
 
-# 1. Preparar todos los cambios
-git add .
+3# 
+pon la ruta de acceso de shawarmazzz para hacer el truco de subir los cambios
+    cd "C:\Users\abrasha\Downloads\SHAWARMAS_KING\shawarmazzz"
 
-# 2. Crear el punto de guardado local con un mensaje claro
+4# 
+Preparar todos los cambios
+    git add .
+
+5# 
+Crear el punto de guardado local con un mensaje claro
 git commit -m "mensaje del cambio hecho ej: sistema x implementado"
 
-# 3. Subir el commit a GitHub
+6# 
+Subir el commit a GitHub
 git push
